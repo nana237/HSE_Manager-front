@@ -1,7 +1,9 @@
 <template>
    <h1 class="text-3xl text-red-600 font-bold underline">
     Tailwind Css integration done !
+
   </h1>
+  
 </template>
 
 <script>
