@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative bg-white rounded-[21px] mx-4 my-8 px-4 py-2 lg:px-8 lg:py-4 flex items-center justify-between"
+    class="relative bg-white rounded-[21px] mx-4 px-4 py-2 lg:px-8 lg:py-4 flex items-center justify-between"
   >
     <!-- Logo Section -->
     <div class="flex items-center">
@@ -21,6 +21,7 @@
       class="w-14 h-14 lg:w-20 lg:h-20 rounded-full object-cover"
       src="@/assets/Profil_image.png"
       alt="Profile Image"
+      v-if="false"
     />
   </div>
 </template>

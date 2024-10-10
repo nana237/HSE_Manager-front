@@ -4,7 +4,7 @@
         <div class="VerticalNavbars w-[299px] h-80 bg-white rounded-3xl shadow flex-col justify-between items-start inline-flex">
         <div class="Frame1000005126 flex-col justify-start items-start gap-9 flex">
             <div class="Frame1000005047 h-20 flex-col justify-start items-start flex">
-                <router-link to="/about" class="SidebarMenu self-stretch pl-9 pr-7 py-2.5 bg-white justify-start items-center gap-2.5 inline-flex">
+                <router-link to="/" class="SidebarMenu self-stretch pl-9 pr-7 py-2.5 bg-white justify-start items-center gap-2.5 inline-flex">
                 <div class="Home text-indigo-500 text-base font-medium font-['Inter'] leading-normal">Accueil</div>
                 </router-link>
                 <router-link to="/emergencykit" class="SidebarMenu w-64 pl-9 pr-7 py-2.5 bg-white justify-start items-center gap-2.5 inline-flex">

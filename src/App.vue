@@ -1,36 +1,29 @@
 <template>
-  <div id="app">
-    <EquipementPage />
-  </div>
-   <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
+<div class="bg-[#f8f8f8] pt-5 h-full">
+
+
+   <nav class="mb-8" >
+      <HeaderComponent profile="false" />
   </nav>
 <div class="flex">
-  <SideBar />  
+  <SideBar v-if="true" />  
   <router-view />
+</div>
 </div>
 </template>
 
 <script>
-import EquipementPage from "./pages/EquipementPage.vue";
+import HeaderComponent from "./components/HeaderComponent.vue";
 import SideBar from "./components/SideBar.vue";
 
 export default {
   name: "App",
   components: {
-    EquipementPage,SideBar
+    HeaderComponent,SideBar
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
