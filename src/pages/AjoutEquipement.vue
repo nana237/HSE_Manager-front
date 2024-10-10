@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative bg-white md:w-[990px] md:h-[766px] rounded-[21px] p-8 mx-4 my-8 md:px-16 md:py-8"
+    class="relative bg-white md:w-[990px] md:h-[766px] rounded-[21px] p-8 mx-4 md:px-16 md:py-8"
   >
     <!-- Colonne de gauche -->
     <div class="flex flex-col md:flex-row gap-28">
@@ -145,7 +145,7 @@
 
 <script>
 export default {
-  name: "AjoutEquipement",
+  name: "FicheEquipement",
 };
 </script>
 

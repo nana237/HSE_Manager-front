@@ -13,7 +13,7 @@
       </div>
     </div>
   </div>
-  <div class="w-[263.47px] h-[59px] left-[44px] top-[26px] absolute flex-col justify-start items-start gap-[5px] inline-flex">
+  <div class="h-[59px] left-[44px] top-[26px] absolute flex-col justify-start items-start gap-[5px] inline-flex">
     <div class="text-[#111928] text-2xl font-semibold font-['Inter'] leading-[30px]">Ma trousse de secours #1</div>
     <div class="text-[#637381] text-base font-normal font-['Inter'] leading-normal">Dernière mise à jour : 20/12/2023</div>
   </div>
