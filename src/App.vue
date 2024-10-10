@@ -1,5 +1,8 @@
 <template>
- <nav>
+  <div id="app">
+    <EquipementPage />
+  </div>
+   <nav>
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
   </nav>
@@ -7,17 +10,18 @@
   <SideBar />  
   <router-view />
 </div>
-  
 </template>
 
 <script>
+import EquipementPage from "./pages/EquipementPage.vue";
 import SideBar from "./components/SideBar.vue";
+
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    SideBar
-  }
-}
+    EquipementPage,SideBar
+  },
+};
 </script>
 
 <style>
