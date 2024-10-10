@@ -12,7 +12,7 @@
         >
           Type
         </label>
-        <div class="relative w-full max-w-sm">
+        <div class="relative w-full">
           <select
             class="appearance-none w-full bg-white border border-gray-300 text-gray-500 py-3 px-4 pr-8 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
           >

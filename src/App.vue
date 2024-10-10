@@ -1,19 +1,18 @@
 <template>
- <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-    </nav>
-
-  <router-view />
+  <div id="app">
+    <EquipementPage />
+  </div>
 </template>
 
 <script>
+import EquipementPage from "./pages/EquipementPage.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-  }
-}
+    EquipementPage,
+  },
+};
 </script>
 
 <style>
