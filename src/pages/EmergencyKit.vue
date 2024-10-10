@@ -111,13 +111,24 @@
 <script>
 import axios from 'axios';
 
+const token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjljOTcxOTk3LTJjYTctNDRlMy1iM2Y5LTAzZDc2MzU3ZTA3NSIsImlhdCI6MTcyODU2Njg1OCwiZXhwIjoxNzI4NTcwNDU4fQ.rQMfHLEUoRSnPLeoRIdK06oFdjOaSxcPnViDWbxu4GU"
+const companyId="9c971997-2ca7-44e3-b3f9-03d76357e075"
+
 export default {
     name:'EmergencyKit',
+    mounted() {
+      this.fetchItems();
+    },
     methods: {
     fetchItems() {
-      axios.get('/api/items')
+      axios.get('http://localhost:3000/equipment/'+ companyId +'/get-all', {
+        headers:{'Authorization': "Bearer " + token}
+      })
         .then(response => {
           this.items = response.data;
+          console.log("response");
+          console.log(response);
+          
         })
         .catch(error => {
           console.error("There was an error fetching the items:", error);
