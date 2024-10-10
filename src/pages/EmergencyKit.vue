@@ -109,7 +109,20 @@
 </div>
 </template>
 <script>
+import axios from 'axios';
+
 export default {
-    name:'EmergencyKit'
+    name:'EmergencyKit',
+    methods: {
+    fetchItems() {
+      axios.get('/api/items')
+        .then(response => {
+          this.items = response.data;
+        })
+        .catch(error => {
+          console.error("There was an error fetching the items:", error);
+        });}}
 }
+
+
 </script>
